@@ -1,6 +1,6 @@
 ﻿namespace HHAPIs
 {
-    public class Class1
+    public class AccessInventoryTip
     {
 
     }
