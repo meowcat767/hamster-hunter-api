@@ -5,15 +5,11 @@ public static class InputAPI
 {
     internal static InputActionRegistry Registry;
 
-    public static event Action<String> OnActionRegistered;
+    public static bool Ready => Registry != null;
 
-    public static IReadOnlyList<InputActionSO> AllActions
+    public static void BindRegistry(InputActionRegistry registry)
     {
-        get
-        {
-            if (Registry == null) return Array.Empty<InputActionSO>();
-            return Registry.AllActions;
-        }
+        Registry = registry;
     }
 
     public static InputActionSO GetAction(string name)
@@ -27,8 +23,6 @@ public static class InputAPI
         return Registry != null && Registry.HasAction(name);
     }
 
-    internal static void BindRegistry(InputActionRegistry registry)
-    {
-        Registry = registry;
-    }
+    public static IReadOnlyList<InputActionSO> AllActions =>
+        Registry?.AllActions;
 }
