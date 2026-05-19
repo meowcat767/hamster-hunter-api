@@ -24,6 +24,9 @@
 	  <Reference Include="System.Security" />
 	  <Reference Include="System.Transactions" />
 	  <Reference Include="System.ValueTuple" />
+	  <Reference Include="Unity.TextMeshPro">
+	    <HintPath>D:\SteamLibrary\steamapps\common\Hamster Hunter\MelonLoader\Il2CppAssemblies\Unity.TextMeshPro.dll</HintPath>
+	  </Reference>
 	  <Reference Include="UnityEditor">
 	    <HintPath>..\..\..\..\..\..\Program Files\Unity\Hub\Editor\6000.4.7f1\Editor\Data\Managed\UnityEditor.dll</HintPath>
 	  </Reference>
